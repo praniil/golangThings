@@ -17,14 +17,13 @@ func GiveFibo() func() int {
 			firstItem = firstC;
 			return current
 		}
-
 	}
 }
 
 func Fibonacci() {
 	fmt.Println("in fibo");
+	fiboSeries := GiveFibo();
 	for i:= 0; i < 10; i++ {
-		fiboSeries := GiveFibo();
 		fmt.Println(fiboSeries());
 	}
 }
