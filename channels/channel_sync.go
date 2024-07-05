@@ -1,8 +1,12 @@
 package channels
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func worker(done chan string) {
+	time.Sleep(10* time.Millisecond)
 	done <- "done"
 }
 
