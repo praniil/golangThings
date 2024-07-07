@@ -6,7 +6,8 @@ import (
 	// "learning_go/goroutines"
 	// "learning_go/panic"
 	// "learning_go/channels"
-	"learning_go/files"
+	// "learning_go/files"
+	"learning_go/pipelining"
 )
 
 func main() {
@@ -23,5 +24,6 @@ func main() {
 	// channels.BufferedChan();
 	// channels.ChannelSync();
 
-	files.ReadFiles();
+	// files.ReadFiles();
+	pipelining.MainFunc();
 }
